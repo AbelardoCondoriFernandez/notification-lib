@@ -1,0 +1,23 @@
+# Notification Library
+
+Una librería Java (sin frameworks) para enviar notificaciones de forma unificada a través de múltiples canales (Email, SMS, Push) con soporte para múltiples proveedores y configuración 100% en código.
+
+## Características
+
+- **Abstracción unificada**: misma interfaz para todos los canales.
+- **Extensible**: agrega nuevos canales o proveedores sin modificar código existente.
+- **Configuración en Java puro**: sin archivos YAML/properties.
+- **Validación**: email, teléfono y campos obligatorios.
+- **Síncrono y asíncrono**: usa `CompletableFuture`.
+- **Simulación de envíos**: logs en consola (ideal para desarrollo y pruebas).
+
+## Instalación
+
+Agrega la dependencia Maven a tu proyecto:
+
+```xml
+<dependency>
+    <groupId>com.example</groupId>
+    <artifactId>notifications-lib</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+</dependency>
